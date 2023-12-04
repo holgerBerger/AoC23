@@ -1,4 +1,4 @@
-// D solution for part1 that does not store all input data but just 2 lines
+// D solution for part2 that does not store all input data but just 2 lines
 
 
 import std.stdio;
