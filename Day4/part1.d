@@ -1,3 +1,5 @@
+// straight forward part 1 solution, all manual parsing
+
 import std.stdio;
 import std.ascii;
 import std.algorithm;
