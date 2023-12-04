@@ -42,7 +42,7 @@ int fbase;          // base index in ring buffer
         numbers[number]=true;    
     }
 
-    // in first pass here, we allocate the ring buffer, we now know how man hits their might be
+    // in first pass here, we allocate the ring buffer, we now know how man hits there might be
     if (future.length==1) {
         future.length = maxhits;
         for(int i=0; i<maxhits; i++)
@@ -57,7 +57,7 @@ int fbase;          // base index in ring buffer
         if (number in numbers) hits++;
     }
     
-    if (fbase==maxhits) fbase-=maxhits; // wrap the vase pointer
+    if (fbase==maxhits) fbase-=maxhits; // wrap the base pointer
     for(int i=0; i<hits; i++)
         future[(fbase+i)%maxhits]+=copies;  // add the copies for next cards
     future[(fbase+maxhits-1)%maxhits] = 1;  // the end of ringbuffer is filled with 1
