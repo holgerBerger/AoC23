@@ -42,7 +42,7 @@ int fbase;          // base index in ring buffer
         numbers[number]=true;    
     }
 
-    // in first pass here, we allocate the ring buffer, we now know how man hits there might be
+    // in first pass here, we allocate the ring buffer, we now know how many hits there might be
     if (future.length==1) {
         future.length = maxhits;
         for(int i=0; i<maxhits; i++)
