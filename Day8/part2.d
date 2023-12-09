@@ -86,7 +86,7 @@ void main() {
                 debug stdout.writefln("%d", p);
 
                 if (compactmap[p].z) {
-                    debug stdout.writefln("%d z=%d [%d]", s, count, p);
+                    stdout.writefln("%d z=%d [%d]", s, count, p);
                     zs~=count;
                     break OUTER;
                 }
